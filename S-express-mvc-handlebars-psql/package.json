@@ -1,0 +1,26 @@
+{
+  "name": "s-express-mvc",
+  "version": "1.0.0",
+  "description": "skeleton-express-app",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test node test/test.js | tap-spec",
+    "start:watch": "nodemon -q src/server.js",
+    "build": "node src/model/database/db_build.js",
+    "start": "node src/server.js",
+    "pretest": "NODE_ENV=test npm run build"
+  },
+  "author": "ivi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "env2": "^2.2.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "pg-promise": "^8.4.0"
+  }
+}
