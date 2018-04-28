@@ -30,7 +30,8 @@ app.engine(
   })
 );
 
-app.use(express.static(path.join(__dirname, '..', 'public')));
+// app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, '..', '..', 'generic-public')));
 app.use(controllers);
 
 module.exports = app;
