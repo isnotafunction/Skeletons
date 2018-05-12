@@ -56,6 +56,37 @@ body {
   text-decoration: underline;
 }
 
+.container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__container {
+  height: 100%;
+  margin: 2rem;
+}
+
+.login__container {
+  height: 100%;
+  margin: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 1.5rem;
+}
+
 .footer {
   width: 100%;
   position: fixed;

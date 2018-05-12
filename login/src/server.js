@@ -20,7 +20,7 @@ app.engine(
   })
 );
 
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, '..', '..', 'generic-public')));
 app.use(controllers);
 
 app.listen(3000, () => console.log('the server is listening on port 3000'));
